@@ -21,6 +21,7 @@ public class StepDef {
     public void user_navigate_to_talenttek() {
 
         driver.get("http://qa.taltektc.com/home/login");
+
     }
     @Then("user input valid id and password")
     public void user_input_valid_id_and_password() {

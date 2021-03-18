@@ -31,6 +31,6 @@ public class config {
         return driver;
     }
 
-
+     //mvn verify -Denv -Dbrowser=ff
 
 }

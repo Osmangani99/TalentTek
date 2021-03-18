@@ -1,0 +1,56 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-18T14:47:35.739Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: null value in entry: url\u003dnull\r\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.\u003cinit\u003e(SingletonImmutableBiMap.java:42)\r\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\r\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat StepDefination.Hook.openBrowser(Hook.java:44)\r\n",
+              "duration": 4945000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefination.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "use open talentTek site",
+        "description": "",
+        "id": "open-browser;use-open-talenttek-site",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 3,
+            "name": "I am in talenTEK site",
+            "match": {
+              "location": "StepDefination.openBrowser.iAmInTalenTEKSite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "I landed talentTek site",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "open browser",
+    "description": "",
+    "id": "open-browser",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeatureFile/login.feature",
+    "tags": []
+  }
+]

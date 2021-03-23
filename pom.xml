@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>Aug2020_FW</artifactId>
+  <artifactId>TalentTek</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Aug2020_FW</name>
+  <name>TalentTek</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,12 +22,14 @@
       <artifactId>cucumber-java</artifactId>
       <version>6.4.0</version>
     </dependency>
+
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-testng</artifactId>
       <version>6.4.0</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
@@ -79,7 +81,7 @@
               <goal>generate</goal>
             </goals>
             <configuration>
-              <projectName>Aug2020_FW</projectName>
+              <projectName>TalentTek</projectName>
               <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
             </configuration>
           </execution>

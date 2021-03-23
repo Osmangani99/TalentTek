@@ -3,13 +3,12 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-18T14:47:35.739Z",
+        "start_timestamp": "2021-03-23T14:19:39.177Z",
         "before": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException: null value in entry: url\u003dnull\r\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.\u003cinit\u003e(SingletonImmutableBiMap.java:42)\r\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\r\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat StepDefination.Hook.openBrowser(Hook.java:44)\r\n",
-              "duration": 4945000000,
-              "status": "failed"
+              "duration": 3838000000,
+              "status": "passed"
             },
             "match": {
               "location": "StepDefination.Hook.openBrowser()"
@@ -19,38 +18,89 @@
         "line": 2,
         "name": "use open talentTek site",
         "description": "",
-        "id": "open-browser;use-open-talenttek-site",
+        "id": "open-browser-and-login;use-open-talenttek-site",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefination.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 31000000,
+              "status": "passed"
             },
             "line": 3,
             "name": "I am in talenTEK site",
             "match": {
-              "location": "StepDefination.openBrowser.iAmInTalenTEKSite()"
+              "location": "StepDefination.login_steps.iAmInTalenTEKSite()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 111000000,
+              "status": "passed"
             },
             "line": 4,
-            "name": "I landed talentTek site",
-            "match": {},
+            "name": "I enterd valid ID",
+            "match": {
+              "location": "StepDefination.login_steps.iEnterdValidID()"
+            },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I entred valid password",
+            "match": {
+              "location": "StepDefination.login_steps.iEntredValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on login button",
+            "match": {
+              "location": "StepDefination.login_steps.iClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 316000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I verify I successfully logged in my account",
+            "match": {
+              "location": "StepDefination.profile_steps.iVerifyISuccessfullyLoggedInMyAccount()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "open browser",
+    "name": "open browser and login",
     "description": "",
-    "id": "open-browser",
+    "id": "open-browser-and-login",
     "keyword": "Feature",
-    "uri": "file:src/test/java/FeatureFile/login.feature",
+    "uri": "file:src/test/java/FeatureFile/login/login.feature",
     "tags": []
   }
 ]

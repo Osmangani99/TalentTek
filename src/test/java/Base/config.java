@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class config {
 
     //We will set WebDriver
@@ -28,7 +30,12 @@ public class config {
         }
 
 
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
         return driver;
+
+
     }
 
      //mvn verify -Denv -Dbrowser=ff

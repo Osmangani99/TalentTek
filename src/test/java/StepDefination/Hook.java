@@ -1,7 +1,11 @@
 package StepDefination;
 
 import Base.config;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.util.Strings;
 
@@ -42,6 +46,25 @@ public class Hook extends config {
         }
 
         driver.get(url);
+
+
+    }
+    @After
+    public void tearDown(Scenario scenario){
+
+        try{
+            if (scenario.isFailed()) {
+                final byte [] screenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+                scenario.attach(screenShot,"image/png",scenario.getName());
+
+            }
+
+        }catch (Exception e){
+
+            System.out.println(e);
+        }
+
+
 
 
     }

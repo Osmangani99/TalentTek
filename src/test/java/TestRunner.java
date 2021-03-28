@@ -3,7 +3,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/java/FeatureFile",
-        glue = "StepDefination",
+        glue = "StepDefinition",
         plugin = {
                 "json:target/cucumber.json"
         }

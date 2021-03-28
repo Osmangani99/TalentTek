@@ -1,4 +1,4 @@
-package StepDefination;
+package StepDefinition;
 
 import Base.config;
 import io.cucumber.java.en.Then;
@@ -9,7 +9,12 @@ public class profile_steps extends config {
 
     @Then("I verify I successfully logged in my account")
     public void iVerifyISuccessfullyLoggedInMyAccount() {
-        profile.verifyProfilePage();
+        profile.verify_student_id();
+
+    }
+
+    @Then("I will verify Thank you message")
+    public void iWillVerifyThankYouMessage() {
 
     }
 }

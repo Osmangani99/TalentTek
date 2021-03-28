@@ -1,5 +1,6 @@
 package pageObject;
 
+import Base.TestData;
 import Base.config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class login_page extends config {
 
+    TestData refID = new TestData();
+
+
     public login_page(WebDriver driver){
         PageFactory.initElements(driver,this);
     }
@@ -17,8 +21,8 @@ public class login_page extends config {
     @FindBy (how = How.NAME, using = "email")
     public WebElement emailOrId;
 
-    public void enterEmail(String studentEmail){
-        emailOrId.sendKeys(studentEmail);
+    public void enterEmail(){
+        emailOrId.sendKeys(refID.global_studentID);
     }
 
     // password edit box

@@ -1,12 +1,12 @@
-package StepDefination;
+package StepDefinition;
 
+import Base.Util;
 import Base.config;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.util.Strings;
 
 public class Hook extends config {
@@ -52,19 +52,20 @@ public class Hook extends config {
     @After
     public void tearDown(Scenario scenario){
 
-        try{
-            if (scenario.isFailed()) {
-                final byte [] screenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-                scenario.attach(screenShot,"image/png",scenario.getName());
+//        try{
+//            if (scenario.isFailed()) {
+//                final byte [] screenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+//                scenario.attach(screenShot,"image/png",scenario.getName());
+//
+//            }
+//
+//        }catch (Exception e){
+//
+//            System.out.println(e);
+//        }
 
-            }
 
-        }catch (Exception e){
-
-            System.out.println(e);
-        }
-
-
+        Util.screenShots(driver,"studentIDLogin");
 
 
     }

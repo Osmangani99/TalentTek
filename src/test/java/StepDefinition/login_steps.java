@@ -34,9 +34,6 @@ public class login_steps extends config {
         Util.screenShots(driver,"afterPassword");
         
     }
-
-
-
     @When("I click on login button")
     public void iClickOnLoginButton() {
         login.clickOnLogin();

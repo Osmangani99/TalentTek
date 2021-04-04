@@ -21,8 +21,12 @@ public class login_page extends config {
     @FindBy (how = How.NAME, using = "email")
     public WebElement emailOrId;
 
-    public void enterEmail(){
+    public void enterEmail( ){
         emailOrId.sendKeys(refID.global_studentID);
+    }
+
+    public void EnterNewIDOrEmail(String newStudentID ){
+        emailOrId.sendKeys(newStudentID);
     }
 
     // password edit box

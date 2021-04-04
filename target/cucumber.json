@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-02T16:44:40.002Z",
+        "start_timestamp": "2021-04-04T01:27:24.628Z",
         "before": [
           {
             "result": {
-              "duration": 4278000000,
+              "duration": 2953000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 296000000,
+              "duration": 284000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 60000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 3,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 597000000,
+              "duration": 485000000,
               "status": "passed"
             },
             "line": 4,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 447000000,
+              "duration": 365000000,
               "status": "passed"
             },
             "line": 5,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 83000000,
+              "duration": 73000000,
               "status": "passed"
             },
             "line": 6,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 426000000,
+              "duration": 341000000,
               "status": "passed"
             },
             "line": 7,
@@ -107,11 +107,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-02T16:44:46.221Z",
+        "start_timestamp": "2021-04-04T01:27:29.166Z",
         "before": [
           {
             "result": {
-              "duration": 2598000000,
+              "duration": 2278000000,
               "status": "passed"
             },
             "match": {
@@ -126,7 +126,7 @@
         "after": [
           {
             "result": {
-              "duration": 301000000,
+              "duration": 305000000,
               "status": "passed"
             },
             "match": {
@@ -139,7 +139,7 @@
         "steps": [
           {
             "result": {
-              "duration": 77000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 5,
@@ -151,7 +151,7 @@
           },
           {
             "result": {
-              "duration": 368000000,
+              "duration": 257000000,
               "status": "passed"
             },
             "line": 6,
@@ -163,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 1488000000,
+              "duration": 1142000000,
               "status": "passed"
             },
             "line": 7,
@@ -175,7 +175,7 @@
           },
           {
             "result": {
-              "duration": 90000000,
+              "duration": 60000000,
               "status": "passed"
             },
             "line": 8,
@@ -199,7 +199,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 10,
@@ -219,6 +218,196 @@
           },
           {
             "name": "@signup"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-04T01:27:33.330Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2401000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Sign up and then sign back in with studentId",
+        "description": "",
+        "id": "signup;sign-up-and-then-sign-back-in-with-studentid",
+        "after": [
+          {
+            "result": {
+              "duration": 275000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am at talentTEK Home Page",
+            "match": {
+              "location": "StepDefinition.signup_steps.iAmAtTalentTEKHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 238000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on Create New Account button",
+            "match": {
+              "location": "StepDefinition.signup_steps.iClickOnCreateNewAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 920000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I filled out the form with valid information",
+            "match": {
+              "location": "StepDefinition.signup_steps.iFilledOutTheFormWithValidInformation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I clicked on agree checkbox",
+            "match": {
+              "location": "StepDefinition.signup_steps.iClickedOnAgreeCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click Create My Account button",
+            "match": {
+              "location": "StepDefinition.signup_steps.iClickCreateMyAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I will store the dynamic studentId",
+            "match": {
+              "location": "StepDefinition.signup_steps.iWillStoreTheDynamicStudentId()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 200000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on Login Link",
+            "match": {
+              "location": "StepDefinition.signup_steps.iClickOnLoginLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 193000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I login with newly created studentId Info",
+            "match": {
+              "location": "StepDefinition.login_steps.iLoginWithNewlyCreatedStudentIdInfo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on Log In button",
+            "match": {
+              "location": "StepDefinition.login_steps.iClickOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I will verify my profile info",
+            "match": {
+              "location": "StepDefinition.profile_steps.iWillVerifyMyProfileInfo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 433000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I open Web table",
+            "match": {
+              "location": "StepDefinition.profile_steps.iOpenWebTable()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I collect my new account info",
+            "match": {
+              "location": "StepDefinition.webTable_steps.iCollectMyNewAccountInfo()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@signup"
+          },
+          {
+            "name": "@test"
           }
         ]
       }

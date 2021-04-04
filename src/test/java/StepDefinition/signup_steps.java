@@ -29,7 +29,6 @@ public class signup_steps extends config {
     @And("I filled out the form with valid information")
     public void iFilledOutTheFormWithValidInformation() {
 
-
         ref.enter_firstName();
         ref.enter_lastName();
         ref.enter_email();
@@ -53,6 +52,28 @@ public class signup_steps extends config {
 
         ref.createMyAccount.click();
     }
+
+
+    @And("I will store the dynamic studentId")
+    public void iWillStoreTheDynamicStudentId() {
+
+        ref.Enter_studentID();
+
+    }
+
+    @And("I click on Login Link")
+    public void iClickOnLoginLink() {
+        ref.login_New_AccountPage();
+
+    }
+
+
+
+
+
+
+
+
 
 
 }

@@ -1,5 +1,6 @@
 package pageObject;
 
+import Base.TestData;
 import Base.config;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
@@ -109,6 +110,21 @@ public class signup_page extends config {
 
    @FindBy(how=How.XPATH,using = "//button[@type='submit']")
     public WebElement createMyAccount;
+
+   @FindBy(how = How.XPATH,using ="//*[@id=\"navbarSupportedContent\"]/ul/li[2]/a")
+    public WebElement loginNewAccount;
+   public void login_New_AccountPage(){
+
+       loginNewAccount.click();
+   }
+
+   @FindBy(how = How.XPATH, using = "//*[@id=\"success_message\"]/div")
+    public WebElement newStudentID;
+    public void Enter_studentID(){
+        TestData.dynamic_ID = newStudentID.getText().substring(38);
+        System.out.println(dynamic_ID);
+    }
+
 
 
 }

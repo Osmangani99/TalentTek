@@ -1,11 +1,13 @@
-pageObject\signup_page.class
 pageObject\profile_page.class
 StepDefinition\login_steps.class
-Base\Util.class
+StepDefinition\webTable_steps.class
 StepDefinition\signup_steps.class
-Base\TestData.class
 pageObject\login_page.class
+StepDefinition\Hook.class
+pageObject\signup_page.class
+Base\Util.class
+pageObject\webTable_page.class
+Base\TestData.class
 StepDefinition\profile_steps.class
 Base\config.class
-StepDefinition\Hook.class
 TestRunner.class

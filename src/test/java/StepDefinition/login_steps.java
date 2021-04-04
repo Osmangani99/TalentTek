@@ -16,15 +16,13 @@ public class login_steps extends config {
     public void iAmInTalenTEKSite() {
 
         Assert.assertEquals(driver.getTitle(),"Sign In");
-
     }
 
     @And("I enterd valid ID")
     public void iEnterdValidID() {
         login.enterEmail();
-        Util.screenShots(driver,"enterEmailID");
 
-        
+        Util.screenShots(driver,"enterEmailID");
     }
 
     @And("I entred valid password")
@@ -32,14 +30,23 @@ public class login_steps extends config {
         login.enterPassword("osman123");
 
         Util.screenShots(driver,"afterPassword");
-        
     }
     @When("I click on login button")
     public void iClickOnLoginButton() {
         login.clickOnLogin();
 
     }
+    @And("I login with newly created studentId Info")
+    public void iLoginWithNewlyCreatedStudentIdInfo() {
 
+        login.EnterNewIDOrEmail(dynamic_ID);
+        login.enterPassword(dynamicPassword);
 
+    }
 
+    @When("I click on Log In button")
+    public void iClickOnLogInButton() {
+
+        login.clickOnLogin();
+    }
 }

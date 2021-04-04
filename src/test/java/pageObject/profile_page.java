@@ -25,16 +25,11 @@ public class profile_page extends config {
         Assert.assertEquals(actual_StudentID,expected_StudentID);
 
     }
-
-//    @FindBy(how = How.XPATH,using = "//input[@placeholder='Student ID']")
-//    public WebElement studentID;
-//
-//    public void global_studentID(){
-//        String current_studentID = studentID.getText();
-//        System.out.println(current_studentID);
-//
-//    }
-
+    @FindBy (how = How.XPATH,using = "//*[@id=\"sidebar-wrapper\"]/div[2]/a[5]")
+    public WebElement webTable;
+    public void Click_WebTable(){
+        webTable.click();
+    }
 
 
 

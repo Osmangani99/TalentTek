@@ -1,5 +1,6 @@
 package pageObject;
 
+import Base.TestData;
 import Base.config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,13 +20,13 @@ public class webTable_page extends config {
     @FindBy(how = How.XPATH,using = "//*[@id=\"page-content-wrapper\"]/div/table/tbody/tr[1]/td[1]")
     public WebElement newAccountFirstName;
     public void newAccount_firstName_info(){
-        String newAccount_user_firstName =newAccountFirstName.getText();
-        System.out.println("This is  New Account users first name "+ " "+newAccount_user_firstName);
+//        String newAccount_user_firstName =newAccountFirstName.getText();
+//        System.out.println("This is  New Account users first name======---------->"+ " "+newAccount_user_firstName);
+
+          TestData.dynamic_firstName =newAccountFirstName.getText();
+          System.out.println("This is new users first name=========------->"+" "+dynamic_firstName);
 
     }
-
-
-
 
 
 

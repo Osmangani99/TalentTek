@@ -24,3 +24,4 @@ Feature: Signup
     Then I will verify my profile info
     Then I open Web table
     Then I collect my new account info
+    Then I verify new user first name and dynamic first name is same

@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 
 public class signup_page extends config {
@@ -123,6 +124,16 @@ public class signup_page extends config {
     public void Enter_studentID(){
         TestData.dynamic_ID = newStudentID.getText().substring(38);
         System.out.println(dynamic_ID);
+    }
+
+    @FindBy (how = How.XPATH,using ="//*[@id=\"page-content-wrapper\"]/div/table/tbody/tr[1]/td[1]")
+    public WebElement newly_login_firstName;
+
+    public void collect_newlyLogin_firstName(){
+
+       String Actual_newly_login_firstname =  newly_login_firstName.getText();
+        Assert.assertEquals(Actual_newly_login_firstname,TestData.dynamic_firstName);
+
     }
 
 

@@ -1,11 +1,13 @@
 C:\Users\osman\TalentTek\src\test\java\Base\Util.java
-C:\Users\osman\TalentTek\src\test\java\pageObject\login_page.java
 C:\Users\osman\TalentTek\src\test\java\StepDefinition\login_steps.java
+C:\Users\osman\TalentTek\src\test\java\TestRunner.java
+C:\Users\osman\TalentTek\src\test\java\pageObject\profile_page.java
+C:\Users\osman\TalentTek\src\test\java\pageObject\signup_page.java
+C:\Users\osman\TalentTek\src\test\java\pageObject\webTable_page.java
+C:\Users\osman\TalentTek\src\test\java\StepDefinition\webTable_steps.java
+C:\Users\osman\TalentTek\src\test\java\pageObject\login_page.java
 C:\Users\osman\TalentTek\src\test\java\StepDefinition\signup_steps.java
 C:\Users\osman\TalentTek\src\test\java\Base\config.java
 C:\Users\osman\TalentTek\src\test\java\Base\TestData.java
 C:\Users\osman\TalentTek\src\test\java\StepDefinition\Hook.java
-C:\Users\osman\TalentTek\src\test\java\TestRunner.java
-C:\Users\osman\TalentTek\src\test\java\pageObject\profile_page.java
-C:\Users\osman\TalentTek\src\test\java\pageObject\signup_page.java
 C:\Users\osman\TalentTek\src\test\java\StepDefinition\profile_steps.java

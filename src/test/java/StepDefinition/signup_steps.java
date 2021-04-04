@@ -6,6 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Assert;
 import pageObject.signup_page;
 
 public class signup_steps extends config {
@@ -68,12 +69,12 @@ public class signup_steps extends config {
     }
 
 
+    @Then("I verify new user first name and dynamic first name is same")
+    public void iVerifyNewUserFirstNameAndDynamicFirstNameIsSame() {
 
+        ref.collect_newlyLogin_firstName();
 
+        //Assert.assertEquals();
 
-
-
-
-
-
+    }
 }

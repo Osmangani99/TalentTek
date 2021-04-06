@@ -49,4 +49,18 @@ public class login_steps extends config {
 
         login.clickOnLogin();
     }
+
+    @And("I enter valid {string} Email")
+    public void iEnterValidEmail(String EmailOrId) {
+
+        login.enterParameter_emailOrId(EmailOrId);
+
+        
+    }
+
+    @And("I enter valid password {string}")
+    public void iEnterValidPassword(String password) {
+        login.enter_passwordParameter(password);
+
+    }
 }

@@ -31,4 +31,9 @@ public class profile_steps extends config {
 
     }
 
+    @Then("I will verify I successfully logged into my existing account")
+    public void iWillVerifyISuccessfullyLoggedIntoMyExistingAccount() {
+
+
+    }
 }

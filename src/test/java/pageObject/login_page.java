@@ -46,6 +46,26 @@ public class login_page extends config {
     }
 
 
+    // Login with parameters
+
+    @FindBy(how = How.NAME,using ="email")
+    public WebElement emailOrIdParameters;
+    public void enterParameter_emailOrId(String emailOrId){
+        emailOrIdParameters.sendKeys(emailOrId);
+    }
+
+    // Password parameters
+
+    @FindBy(how = How.NAME,using = "password")
+    public WebElement passwordWithParameter;
+    public void enter_passwordParameter(String password){
+        passwordWithParameter.sendKeys(password);
+
+    }
+
+
+
+
 
 
 

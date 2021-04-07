@@ -17,51 +17,53 @@ public class login_page extends config {
         PageFactory.initElements(driver,this);
     }
 
+    //================= Login page locator -----Login page WebElement ================
     //email edit box
     @FindBy (how = How.NAME, using = "email")
     public WebElement emailOrId;
-
-    public void enterEmail( ){
-        emailOrId.sendKeys(refID.global_studentID);
-    }
-
-    public void EnterNewIDOrEmail(String newStudentID ){
-        emailOrId.sendKeys(newStudentID);
-    }
 
     // password edit box
     @FindBy (how = How.NAME, using = "password")
     public WebElement password;
 
-    public void enterPassword(String studentPassword){
-        password.sendKeys(studentPassword);
-    }
-
     // login button
     @FindBy (how = How.XPATH, using = "//input[@value='Log In']")
     public WebElement loginButton;
 
+
+    // Login with parameters
+    @FindBy(how = How.NAME,using ="email")
+    public WebElement emailOrIdParameters;
+
+
+    // Password parameters
+    @FindBy(how = How.NAME,using = "password")
+    public WebElement passwordWithParameter;
+
+
+    // ===========Login page functions ============
+
+    // Login with global ID from testData table
+    public void enterEmail( ){
+        emailOrId.sendKeys(refID.global_studentID);
+    }
+
+    // Login with new student ID
+    public void EnterNewIDOrEmail(String newStudentID ){
+        emailOrId.sendKeys(newStudentID);
+    }
+    // Login password
+    public void enterPassword(String studentPassword){
+        password.sendKeys(studentPassword);
+    }
+    // Click login button
     public void clickOnLogin(){
         loginButton.click();
     }
-
-
-    // Login with parameters
-
-    @FindBy(how = How.NAME,using ="email")
-    public WebElement emailOrIdParameters;
-    public void enterParameter_emailOrId(String emailOrId){
-        emailOrIdParameters.sendKeys(emailOrId);
-    }
-
-    // Password parameters
-
-    @FindBy(how = How.NAME,using = "password")
-    public WebElement passwordWithParameter;
-    public void enter_passwordParameter(String password){
-        passwordWithParameter.sendKeys(password);
-
-    }
+    // using Parameter ID or email
+    public void enterParameter_emailOrId(String emailOrId){ emailOrIdParameters.sendKeys(emailOrId); }
+    // using Parameter Password
+    public void enter_passwordParameter(String password){ passwordWithParameter.sendKeys(password); }
 
 
 

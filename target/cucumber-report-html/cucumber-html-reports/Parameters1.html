@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber-JVM Reports  - Tag: @test</title>
+<title>Cucumber-JVM Reports  - Tag: @Parameters1</title>
 
 </head>
 <body>
@@ -122,18 +122,18 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@test</td>
-                    <td  class="passed"    >1</td>
-          <td >0</td>
+          <td class="tagname">@Parameters1</td>
+                    <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td      class="passed"    >13</td>
+          <td      class="passed"    >5</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">13</td>
-          <td class="duration" data-value="3692000000">3s 692ms</td>
-          <td class="passed">Passed</td>
+          <td class="total">10</td>
+          <td class="duration" data-value="34846000000">34s 846ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -152,23 +152,20 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="file-src-test-java-FeatureFile-signup-signup-feature.html">View Feature</a> <i>Signup</i>
+      <a href="file-src-test-java-FeatureFile-login-loginParameters-feature.html">View Feature</a> <i>Login with Parameters</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="regression.html">@regression</a>
-       <a href="smoke.html">@smoke</a>
-       <a href="signup.html">@signup</a>
-       <a href="test.html">@test</a>
+       <a href="Parameters1.html">@Parameters1</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Sign up and then sign back in with studentId</span>
+  <span class="name">Sign up and then sign back in with studentId using Gherkin Datatable</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -177,7 +174,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -198,7 +195,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">StepDefinition.Hook.openBrowser()</span>
                         
-  <span class="lead-duration duration">2s 634ms</span>
+  <span class="lead-duration duration">2s 474ms</span>
 
           </div>
 
@@ -214,9 +211,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -226,7 +223,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
@@ -273,15 +270,28 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I filled out the form with valid information</span>
+  <span class="name">I filled out the form using the following data table</span>
   
-  <span class="lead-duration duration">1s 438ms</span>
+  <span class="lead-duration duration">878ms</span>
 
   </div>
 
         
 
 
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>Osman</td>
+                                  <td>Gani</td>
+                                  <td>ctg@gmail.com</td>
+                                  <td>osman123</td>
+                                  <td>osman123</td>
+                                  <td>Feb</td>
+                                  <td>7</td>
+                                  <td>1987</td>
+                                  <td>Male</td>
+                              </tr>
+                      </table>
         
         
 
@@ -296,7 +306,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I clicked on agree checkbox</span>
   
-  <span class="lead-duration duration">106ms</span>
+  <span class="lead-duration duration">057ms</span>
 
   </div>
 
@@ -334,15 +344,41 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">And</span>
   <span class="name">I will store the dynamic studentId</span>
   
-  <span class="lead-duration duration">169ms</span>
+  <span class="lead-duration duration">33s 533ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Error message</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id="success_message"]/div
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-CND0JEEU', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.getText(Unknown Source)
+	at pageObject.signup_page.Enter_studentID(signup_page.java:125)
+	at StepDefinition.signup_steps.iWillStoreTheDynamicStudentId(signup_steps.java:61)
+	at ✽.I will store the dynamic studentId(file:///C:/Users/osman/TalentTek/src/test/java/FeatureFile/login/loginParameters.feature:20)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -355,11 +391,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">I click on Login Link</span>
   
-  <span class="lead-duration duration">250ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -376,11 +412,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">I login with newly created studentId Info</span>
   
-  <span class="lead-duration duration">238ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -397,11 +433,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">When</span>
   <span class="name">I click on Log In button</span>
   
-  <span class="lead-duration duration">092ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -418,74 +454,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I will verify my profile info</span>
   
-  <span class="lead-duration duration">001ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I open Web table</span>
-  
-  <span class="lead-duration duration">917ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I collect my new account info</span>
-  
-  <span class="lead-duration duration">049ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I verify new user first name and dynamic first name is same</span>
-  
-  <span class="lead-duration duration">054ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -506,7 +479,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -518,13 +491,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">StepDefinition.Hook.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">303ms</span>
+  <span class="lead-duration duration">031ms</span>
 
           </div>
 

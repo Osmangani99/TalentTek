@@ -31,13 +31,22 @@ public class Util {
         }
     }
 
+    //============== drop down using select class==========
+
+    public void dropDownByValue(WebElement element, String value){
+        Select select = new Select(element);
+        select.selectByVisibleText(value);
+    }
+    public void dropDownByIndex(WebElement element, int indexNumber){
+        Select select = new Select(element);
+        select.selectByIndex(indexNumber);
+    }
+    public void dropDownByVisibleText(WebElement element, String value){
+        Select select = new Select(element);
+        select.selectByVisibleText(value);
+    }
 
 
-        public void dropDownOption(){
-
-
-
-        }
 
 
 

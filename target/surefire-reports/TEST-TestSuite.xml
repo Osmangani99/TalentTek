@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="22.351" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="60.828" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\osman\AppData\Local\Temp\surefire7465801176762059942\surefirebooter6497583754868122052.jar C:\Users\osman\AppData\Local\Temp\surefire7465801176762059942 2021-04-06T13-11-01_775-jvmRun1 surefire30492732875604499tmp surefire_02516434275541902611tmp"/>
+    <property name="sun.java.command" value="C:\Users\osman\AppData\Local\Temp\surefire6054741488783230245\surefirebooter5307845736080729865.jar C:\Users\osman\AppData\Local\Temp\surefire6054741488783230245 2021-04-07T13-20-56_905-jvmRun1 surefire2854879849687437875tmp surefire_0282977988409851452tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\osman\TalentTek\target\test-classes;C:\Users\osman\TalentTek\target\classes;C:\Users\osman\.m2\repository\io\cucumber\cucumber-java\6.4.0\cucumber-java-6.4.0.jar;C:\Users\osman\.m2\repository\io\cucumber\cucumber-core\6.4.0\cucumber-core-6.4.0.jar;C:\Users\osman\.m2\repository\io\cucumber\cucumber-gherkin\6.4.0\cucumber-gherkin-6.4.0.jar;C:\Users\osman\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.4.0\cucumber-gherkin-messages-6.4.0.jar;C:\Users\osman\.m2\repository\io\cucumber\messages\12.4.0\messages-12.4.0.jar;C:\Users\osman\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\osman\.m2\repository\io\cucumber\cucumber-expressions\10.2.2\cucumber-expressions-10.2.2.jar;C:\Users\osman\.m2\repository\io\cucumber\datatable\3.3.1\datatable-3.3.1.jar;C:\Users\osman\.m2\repository\io\cucumber\cucumber-plugin\6.4.0\cucumber-plugin-6.4.0.jar;C:\Users\osman\.m2\repository\io\cucumber\docstring\6.4.0\docstring-6.4.0.jar;C:\Users\osman\.m2\repository\io\cucumber\html-formatter\7.2.0\html-formatter-7.2.0.jar;C:\Users\osman\.m2\repository\io\cucumber\create-meta\1.1.0\create-meta-1.1.0.jar;C:\Users\osman\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\osman\.m2\repository\io\cucumber\cucumber-testng\6.4.0\cucumber-testng-6.4.0.jar;C:\Users\osman\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\osman\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\osman\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\osman\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\osman\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\osman\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\osman\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\osman\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\osman\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\osman\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\osman\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\osman\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\osman\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\osman\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\osman\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\osman\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\osman\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\osman\.m2\repository\io\github\bonigarcia\webdrivermanager\4.2.2\webdrivermanager-4.2.2.jar;C:\Users\osman\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\osman\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\osman\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\osman\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\osman\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.1\httpclient5-5.0.1.jar;C:\Users\osman\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.1\httpcore5-5.0.1.jar;C:\Users\osman\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.1\httpcore5-h2-5.0.1.jar;C:\Users\osman\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\osman\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\osman\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\osman\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\osman\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\osman\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\osman\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\osman\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\osman"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\osman\AppData\Local\Temp\surefire7465801176762059942\surefirebooter6497583754868122052.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\osman\AppData\Local\Temp\surefire6054741488783230245\surefirebooter5307845736080729865.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,7 +61,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="runScenario[&quot;use open talentTek site&quot;, &quot;Optional[open browser and login]&quot;](1)" classname="TestRunner" time="6.464">
+  <testcase name="runScenario[&quot;use open talentTek site&quot;, &quot;Optional[open browser and login]&quot;](1)" classname="TestRunner" time="6.213">
     <system-out><![CDATA[Successfully captured a screenshot
 Successfully captured a screenshot
 **************TTCKp5At
@@ -70,46 +70,71 @@ Successfully captured a screenshot
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 41791
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 7699
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 06, 2021 1:11:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 07, 2021 1:21:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;As a user I can enter values in Gherkin syntax to use in the StepDef&quot;, &quot;Optional[Login with Parameters]&quot;](2)" classname="TestRunner" time="3.857">
+  <testcase name="runScenario[&quot;As a user I can enter values in Gherkin syntax to use in the StepDef&quot;, &quot;Optional[Login with Parameters]&quot;](2)" classname="TestRunner" time="3.505">
     <system-out><![CDATA[Successfully captured a screenshot
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 28900
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 8065
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 06, 2021 1:11:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 07, 2021 1:21:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Sign up&quot;, &quot;Optional[Signup]&quot;](3)" classname="TestRunner" time="4.872">
+  <testcase name="runScenario[&quot;Sign up and then sign back in with studentId using Gherkin Datatable&quot;, &quot;Optional[Login with Parameters]&quot;](3)" classname="TestRunner" time="37.501">
+    <failure message="Cannot locate an element using xpath=//*[@id=&quot;success_message&quot;]/div&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-CND0JEEU&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using xpath=//*[@id="success_message"]/div
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-CND0JEEU', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver
+]]></failure>
+    <system-out><![CDATA[Exception while taking screenshot no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-CND0JEEU', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\osman\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5a2ba2346db820f1e70642165389076
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 28783
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 07, 2021 1:21:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Sign up&quot;, &quot;Optional[Signup]&quot;](4)" classname="TestRunner" time="5.781">
     <system-out><![CDATA[Successfully captured a screenshot
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 43180
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 41219
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 06, 2021 1:11:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 07, 2021 1:21:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Sign up and then sign back in with studentId&quot;, &quot;Optional[Signup]&quot;](4)" classname="TestRunner" time="6.141">
-    <system-out><![CDATA[TTCnXomt
-This is new users first name=========-------> Darron
+  <testcase name="runScenario[&quot;Sign up and then sign back in with studentId&quot;, &quot;Optional[Signup]&quot;](5)" classname="TestRunner" time="6.627">
+    <system-out><![CDATA[TTCkMUGb
+This is new users first name=========-------> Mervin
 Successfully captured a screenshot
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 45812
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 5757
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 06, 2021 1:11:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 07, 2021 1:21:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>

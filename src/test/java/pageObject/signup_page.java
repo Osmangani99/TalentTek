@@ -1,6 +1,7 @@
 package pageObject;
 
 import Base.TestData;
+import Base.Util;
 import Base.config;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +16,7 @@ import org.testng.Assert;
 public class signup_page extends config {
 
     Faker faker = new Faker();
+   // Util util = new Util();
 
     public signup_page(WebDriver driver)
     { PageFactory.initElements(driver,this); }
@@ -44,35 +46,26 @@ public class signup_page extends config {
     public WebElement lastName;
 
     public void enter_lastName (){
-        lastName.sendKeys(faker.name().lastName());
-
-    }
+        lastName.sendKeys(faker.name().lastName()); }
 
     @FindBy(how = How.XPATH,using = "//*[@id=\"signup-form\"]/input[1]")
     public WebElement emailAddress;
 
     public void enter_email (){
-        emailAddress.sendKeys(faker.internet().emailAddress());
-
-    }
+        emailAddress.sendKeys(faker.internet().emailAddress()); }
 
 
     @FindBy(how = How.XPATH,using = "//*[@id=\"signup-form\"]/input[2]")
     public WebElement password;
 
     public void enter_password (){
-        password.sendKeys("test1234");
-
-    }
+        password.sendKeys("test1234"); }
 
     @FindBy(how = How.NAME,using = "confirmPassword")
     public WebElement Conpassword;
 
     public void enter_Conpassword ( ){
-
-        Conpassword.sendKeys("test1234");
-
-    }
+        Conpassword.sendKeys("test1234"); }
 
 
     @FindBy(how =How.NAME,using = "month")

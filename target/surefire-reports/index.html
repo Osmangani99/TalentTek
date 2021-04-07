@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;Sign up and then sign back in with studentId using Gherkin Datatable&quot;, &quot;Optional[Login with Paramet...)">runScenario("Sign up and then sign back in with studentId using Gherkin Datatable", "Optional[Login with Paramet...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,7 +121,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;As a user I can enter values in Gherkin syntax to use in the StepDef&quot;, &quot;Optional[Login with Paramet...)">runScenario("As a user I can enter values in Gherkin syntax to use in the StepDef", "Optional[Login with Paramet...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;Sign up&quot;, &quot;Optional[Signup]&quot;)">runScenario("Sign up", "Optional[Signup]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -117,7 +131,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;Sign up&quot;, &quot;Optional[Signup]&quot;)">runScenario("Sign up", "Optional[Signup]")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;As a user I can enter values in Gherkin syntax to use in the StepDef&quot;, &quot;Optional[Login with Paramet...)">runScenario("As a user I can enter values in Gherkin syntax to use in the StepDef", "Optional[Login with Paramet...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -132,6 +146,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sign up and then sign back in with studentId using Gherkin Datatable&quot;, &quot;Optional[Login with Paramet...)">
+                  </a> <!-- runScenario("Sign up and then sign back in with studentId using Gherkin Datatable", "Optional[Login with Paramet...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sign up and then sign back in with studentId using Gherkin Datatable", "Optional[Login with Parameters]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id=&quot;success_message&quot;]/div
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CND0JEEU&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.getText(Unknown Source)
+	at pageObject.signup_page.Enter_studentID(signup_page.java:125)
+	at StepDefinition.signup_steps.iWillStoreTheDynamicStudentId(signup_steps.java:61)
+	at ✽.I will store the dynamic studentId(file:///C:/Users/osman/TalentTek/src/test/java/FeatureFile/login/loginParameters.feature:20)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -150,10 +199,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;As a user I can enter values in Gherkin syntax to use in the StepDef&quot;, &quot;Optional[Login with Paramet...)">
-                  </a> <!-- runScenario("As a user I can enter values in Gherkin syntax to use in the StepDef", "Optional[Login with Paramet...) -->
+                  <a name="runScenario(&quot;Sign up&quot;, &quot;Optional[Signup]&quot;)">
+                  </a> <!-- runScenario("Sign up", "Optional[Signup]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("As a user I can enter values in Gherkin syntax to use in the StepDef", "Optional[Login with Parameters]")</span>
+                  <span class="parameters">("Sign up", "Optional[Signup]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -170,10 +219,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Sign up&quot;, &quot;Optional[Signup]&quot;)">
-                  </a> <!-- runScenario("Sign up", "Optional[Signup]") -->
+                  <a name="runScenario(&quot;As a user I can enter values in Gherkin syntax to use in the StepDef&quot;, &quot;Optional[Login with Paramet...)">
+                  </a> <!-- runScenario("As a user I can enter values in Gherkin syntax to use in the StepDef", "Optional[Login with Paramet...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Sign up", "Optional[Signup]")</span>
+                  <span class="parameters">("As a user I can enter values in Gherkin syntax to use in the StepDef", "Optional[Login with Parameters]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -240,28 +289,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'TestRunner')
-data.setCell(0, 3, 6401);
+data.setCell(0, 3, 37378);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'TestRunner')
-data.setCell(1, 3, 6128);
+data.setCell(1, 3, 6632);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'TestRunner')
-data.setCell(2, 3, 4895);
+data.setCell(2, 3, 6153);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'TestRunner')
-data.setCell(3, 3, 3885);
+data.setCell(3, 3, 5897);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'TestRunner')
+data.setCell(4, 3, 3514);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 59 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -294,23 +347,29 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("use open talentTek site", "Optional[open browser and login]")</span>
-                <span class="method-start">348 ms</span>
+                <span class="method-start">406 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("As a user I can enter values in Gherkin syntax to use in the StepDef", "Optional[Login with Paramet...)</span>
-                <span class="method-start">6749 ms</span>
+                <span class="method-start">6559 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Sign up and then sign back in with studentId using Gherkin Datatable", "Optional[Login with Paramet...)</span>
+                <span class="method-start">10074 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Sign up", "Optional[Signup]")</span>
-                <span class="method-start">10634 ms</span>
+                <span class="method-start">47468 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Sign up and then sign back in with studentId", "Optional[Signup]")</span>
-                <span class="method-start">15529 ms</span>
+                <span class="method-start">53365 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">21657 ms</span>
+                <span class="method-start">60001 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
